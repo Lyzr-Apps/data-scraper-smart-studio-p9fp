@@ -1,0 +1,65 @@
+{
+  "app_name": "ProspectIQ AI-Powered Company & Contact Intelligence Platform",
+  "created_at": "2026-02-26",
+  "agents": {
+    "manager": {
+      "name": "Intelligence Coordinator",
+      "agent_id": "69a0047b5c89478b3d0771e1",
+      "node_id": "manager_agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "is_manager": true,
+      "managed_agents": [
+        "69a0045f5c89478b3d0771da",
+        "69a004606a4eb8f58312bbb1",
+        "69a004606a4eb8f58312bbb3",
+        "69a00460881ff4d2ab2120d4"
+      ]
+    },
+    "company_agent": {
+      "name": "Company & Firmographic Agent",
+      "agent_id": "69a0045f5c89478b3d0771da",
+      "node_id": "company_agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "is_manager": false
+    },
+    "contact_agent": {
+      "name": "Contact & Social Profiles Agent",
+      "agent_id": "69a004606a4eb8f58312bbb1",
+      "node_id": "contact_agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "is_manager": false
+    },
+    "tech_agent": {
+      "name": "Technographic Data Agent",
+      "agent_id": "69a004606a4eb8f58312bbb3",
+      "node_id": "tech_agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "is_manager": false
+    },
+    "market_agent": {
+      "name": "Market Intelligence Agent",
+      "agent_id": "69a00460881ff4d2ab2120d4",
+      "node_id": "market_agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "is_manager": false
+    }
+  },
+  "primary_agent_id": "69a0047b5c89478b3d0771e1",
+  "response_schemas": {
+    "intelligence_coordinator": "response_schemas/intelligence_coordinator_response.json",
+    "company_firmographic_agent": "response_schemas/company_firmographic_agent_response.json",
+    "contact_social_profiles_agent": "response_schemas/contact_social_profiles_agent_response.json",
+    "technographic_data_agent": "response_schemas/technographic_data_agent_response.json",
+    "market_intelligence_agent": "response_schemas/market_intelligence_agent_response.json"
+  }
+}

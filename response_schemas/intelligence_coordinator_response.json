@@ -1,0 +1,130 @@
+{
+  "agent_name": "Intelligence Coordinator",
+  "agent_id": "69a0047b5c89478b3d0771e1",
+  "description": "Coordinates all sub-agents, routes company research queries, and aggregates enriched data from multiple sources into a unified intelligence report",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_overview": {
+      "company_name": "string",
+      "description": "string",
+      "industry": "string",
+      "revenue_estimate": "string",
+      "employee_count": "string",
+      "founding_year": "string",
+      "headquarters": "string",
+      "website_url": "string",
+      "company_type": "string",
+      "leadership": [
+        {
+          "name": "string",
+          "title": "string"
+        }
+      ]
+    },
+    "contacts": [
+      {
+        "name": "string",
+        "title": "string",
+        "email": "string",
+        "phone": "string",
+        "linkedin_url": "string",
+        "twitter_handle": "string",
+        "other_profiles": "string"
+      }
+    ],
+    "tech_stack": [
+      {
+        "technology_name": "string",
+        "category": "string",
+        "confidence": "string"
+      }
+    ],
+    "tech_summary": "string",
+    "recent_news": [
+      {
+        "headline": "string",
+        "source": "string",
+        "date": "string",
+        "summary": "string"
+      }
+    ],
+    "funding_rounds": [
+      {
+        "round_type": "string",
+        "amount": "string",
+        "date": "string",
+        "investors": "string"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "string",
+        "notes": "string"
+      }
+    ],
+    "market_positioning": "string"
+  },
+  "example_response": {
+    "company_overview": {
+      "company_name": "sample string",
+      "description": "sample string",
+      "industry": "sample string",
+      "revenue_estimate": "sample string",
+      "employee_count": "sample string",
+      "founding_year": "sample string",
+      "headquarters": "sample string",
+      "website_url": "sample string",
+      "company_type": "sample string",
+      "leadership": [
+        {
+          "name": "sample string",
+          "title": "sample string"
+        }
+      ]
+    },
+    "contacts": [
+      {
+        "name": "sample string",
+        "title": "sample string",
+        "email": "sample string",
+        "phone": "sample string",
+        "linkedin_url": "sample string",
+        "twitter_handle": "sample string",
+        "other_profiles": "sample string"
+      }
+    ],
+    "tech_stack": [
+      {
+        "technology_name": "sample string",
+        "category": "sample string",
+        "confidence": "sample string"
+      }
+    ],
+    "tech_summary": "sample string",
+    "recent_news": [
+      {
+        "headline": "sample string",
+        "source": "sample string",
+        "date": "sample string",
+        "summary": "sample string"
+      }
+    ],
+    "funding_rounds": [
+      {
+        "round_type": "sample string",
+        "amount": "sample string",
+        "date": "sample string",
+        "investors": "sample string"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "sample string",
+        "notes": "sample string"
+      }
+    ],
+    "market_positioning": "sample string"
+  }
+}

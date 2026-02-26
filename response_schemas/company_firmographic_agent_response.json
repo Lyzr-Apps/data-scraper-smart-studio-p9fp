@@ -1,0 +1,43 @@
+{
+  "agent_name": "Company & Firmographic Agent",
+  "agent_id": "69a0045f5c89478b3d0771da",
+  "description": "Searches Google, company websites, and business directories for company details including revenue, employee count, industry, founding year, HQ location, and organizational structure",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_name": "string",
+    "description": "string",
+    "industry": "string",
+    "revenue_estimate": "string",
+    "employee_count": "string",
+    "founding_year": "string",
+    "headquarters": "string",
+    "website_url": "string",
+    "company_type": "string",
+    "leadership": [
+      {
+        "name": "string",
+        "title": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "company_name": "sample string",
+    "description": "sample string",
+    "industry": "sample string",
+    "revenue_estimate": "sample string",
+    "employee_count": "sample string",
+    "founding_year": "sample string",
+    "headquarters": "sample string",
+    "website_url": "sample string",
+    "company_type": "sample string",
+    "leadership": [
+      {
+        "name": "sample string",
+        "title": "sample string"
+      }
+    ]
+  },
+  "schema_file": "response_schemas/company_firmographic_agent_response.json"
+}

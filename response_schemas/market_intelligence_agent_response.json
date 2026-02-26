@@ -1,0 +1,61 @@
+{
+  "agent_name": "Market Intelligence Agent",
+  "agent_id": "69a00460881ff4d2ab2120d4",
+  "description": "Searches ZoomInfo, Google News, funding databases, and industry publications for competitive landscape, recent funding rounds, press mentions, and market positioning data",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_name": "string",
+    "recent_news": [
+      {
+        "headline": "string",
+        "source": "string",
+        "date": "string",
+        "summary": "string"
+      }
+    ],
+    "funding_rounds": [
+      {
+        "round_type": "string",
+        "amount": "string",
+        "date": "string",
+        "investors": "string"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "string",
+        "notes": "string"
+      }
+    ],
+    "market_positioning": "string"
+  },
+  "example_response": {
+    "company_name": "sample string",
+    "recent_news": [
+      {
+        "headline": "sample string",
+        "source": "sample string",
+        "date": "sample string",
+        "summary": "sample string"
+      }
+    ],
+    "funding_rounds": [
+      {
+        "round_type": "sample string",
+        "amount": "sample string",
+        "date": "sample string",
+        "investors": "sample string"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "sample string",
+        "notes": "sample string"
+      }
+    ],
+    "market_positioning": "sample string"
+  },
+  "schema_file": "response_schemas/market_intelligence_agent_response.json"
+}

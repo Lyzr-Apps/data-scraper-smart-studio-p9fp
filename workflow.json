@@ -1,0 +1,74 @@
+{
+  "name": "ProspectIQ AI-Powered Company & Contact Intelligence Platform",
+  "description": "Multi-agent platform that coordinates specialized research agents to produce comprehensive company intelligence reports including firmographic data, contacts, technographic analysis, and market intelligence.",
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Company Research Query",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "manager_agent",
+      "type": "Agent",
+      "label": "Intelligence Coordinator",
+      "nodeCategory": "agent",
+      "agent_id": "69a0047b5c89478b3d0771e1",
+      "provider": "openai",
+      "model": "gpt-4.1"
+    },
+    {
+      "id": "company_agent",
+      "type": "Agent",
+      "label": "Company & Firmographic Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a0045f5c89478b3d0771da",
+      "provider": "perplexity",
+      "model": "sonar-pro"
+    },
+    {
+      "id": "contact_agent",
+      "type": "Agent",
+      "label": "Contact & Social Profiles Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a004606a4eb8f58312bbb1",
+      "provider": "perplexity",
+      "model": "sonar-pro"
+    },
+    {
+      "id": "tech_agent",
+      "type": "Agent",
+      "label": "Technographic Data Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a004606a4eb8f58312bbb3",
+      "provider": "perplexity",
+      "model": "sonar-pro"
+    },
+    {
+      "id": "market_agent",
+      "type": "Agent",
+      "label": "Market Intelligence Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a00460881ff4d2ab2120d4",
+      "provider": "perplexity",
+      "model": "sonar-pro"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Unified Intelligence Report",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    { "source": "input_node", "target": "manager_agent" },
+    { "source": "manager_agent", "target": "company_agent" },
+    { "source": "manager_agent", "target": "contact_agent" },
+    { "source": "manager_agent", "target": "tech_agent" },
+    { "source": "manager_agent", "target": "market_agent" },
+    { "source": "company_agent", "target": "output_node" },
+    { "source": "contact_agent", "target": "output_node" },
+    { "source": "tech_agent", "target": "output_node" },
+    { "source": "market_agent", "target": "output_node" }
+  ]
+}

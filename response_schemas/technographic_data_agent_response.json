@@ -1,0 +1,31 @@
+{
+  "agent_name": "Technographic Data Agent",
+  "agent_id": "69a004606a4eb8f58312bbb3",
+  "description": "Searches tech review sites, Clay.io, Apify listings, and technology databases for tech stack, tools used, infrastructure details, and software adoption signals",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_name": "string",
+    "tech_stack": [
+      {
+        "technology_name": "string",
+        "category": "string",
+        "confidence": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "company_name": "sample string",
+    "tech_stack": [
+      {
+        "technology_name": "sample string",
+        "category": "sample string",
+        "confidence": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  },
+  "schema_file": "response_schemas/technographic_data_agent_response.json"
+}

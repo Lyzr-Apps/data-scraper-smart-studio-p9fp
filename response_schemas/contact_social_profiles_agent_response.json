@@ -1,0 +1,37 @@
+{
+  "agent_name": "Contact & Social Profiles Agent",
+  "agent_id": "69a004606a4eb8f58312bbb1",
+  "description": "Searches LinkedIn, social platforms, and professional directories for key decision-maker contacts, email addresses, phone numbers, job titles, and social profile URLs",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "company_name": "string",
+    "contacts": [
+      {
+        "name": "string",
+        "title": "string",
+        "email": "string",
+        "phone": "string",
+        "linkedin_url": "string",
+        "twitter_handle": "string",
+        "other_profiles": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "company_name": "sample string",
+    "contacts": [
+      {
+        "name": "sample string",
+        "title": "sample string",
+        "email": "sample string",
+        "phone": "sample string",
+        "linkedin_url": "sample string",
+        "twitter_handle": "sample string",
+        "other_profiles": "sample string"
+      }
+    ]
+  },
+  "schema_file": "response_schemas/contact_social_profiles_agent_response.json"
+}
