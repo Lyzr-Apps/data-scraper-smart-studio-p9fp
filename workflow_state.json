@@ -52,14 +52,26 @@
       "model": "sonar-pro",
       "temperature": 0.2,
       "is_manager": false
+    },
+    "lead_finder_agent": {
+      "name": "India Lead Finder Agent",
+      "agent_id": "69a0087d5b61f44b7feefc77",
+      "node_id": "lead_finder_agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.3,
+      "is_manager": false,
+      "standalone": true
     }
   },
   "primary_agent_id": "69a0047b5c89478b3d0771e1",
+  "lead_finder_agent_id": "69a0087d5b61f44b7feefc77",
   "response_schemas": {
     "intelligence_coordinator": "response_schemas/intelligence_coordinator_response.json",
     "company_firmographic_agent": "response_schemas/company_firmographic_agent_response.json",
     "contact_social_profiles_agent": "response_schemas/contact_social_profiles_agent_response.json",
     "technographic_data_agent": "response_schemas/technographic_data_agent_response.json",
-    "market_intelligence_agent": "response_schemas/market_intelligence_agent_response.json"
+    "market_intelligence_agent": "response_schemas/market_intelligence_agent_response.json",
+    "india_lead_finder_agent": "response_schemas/india_lead_finder_agent_response.json"
   }
 }

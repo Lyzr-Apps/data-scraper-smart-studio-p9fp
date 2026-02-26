@@ -1,0 +1,48 @@
+{
+  "agent_name": "India Lead Finder Agent",
+  "agent_id": "69a0087d5b61f44b7feefc77",
+  "description": "Searches the web for Indian companies matching specific designation availability and employee size criteria. Returns comprehensive lists of company names, industries, cities, and contact information for lead generation.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "search_query": "string",
+    "designation": "string",
+    "employee_size": "string",
+    "geography": "string",
+    "total_results": "number",
+    "companies": [
+      {
+        "company_name": "string",
+        "industry": "string",
+        "city": "string",
+        "employee_size_range": "string",
+        "website": "string",
+        "designation_found": "string",
+        "contact_person": "string",
+        "source": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "search_query": "sample string",
+    "designation": "sample string",
+    "employee_size": "sample string",
+    "geography": "sample string",
+    "total_results": 0,
+    "companies": [
+      {
+        "company_name": "sample string",
+        "industry": "sample string",
+        "city": "sample string",
+        "employee_size_range": "sample string",
+        "website": "sample string",
+        "designation_found": "sample string",
+        "contact_person": "sample string",
+        "source": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  }
+}

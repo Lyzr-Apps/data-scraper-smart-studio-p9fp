@@ -1,0 +1,20 @@
+ProspectIQ - Lead Finder Feature Complete
+=========================================
+Date: 2026-02-26
+
+Agents Created:
+- Intelligence Coordinator (Manager): 69a0047b5c89478b3d0771e1 (OpenAI gpt-4.1)
+- Company & Firmographic Agent: 69a0045f5c89478b3d0771da (Perplexity sonar-pro)
+- Contact & Social Profiles Agent: 69a004606a4eb8f58312bbb1 (Perplexity sonar-pro)
+- Technographic Data Agent: 69a004606a4eb8f58312bbb3 (Perplexity sonar-pro)
+- Market Intelligence Agent: 69a00460881ff4d2ab2120d4 (Perplexity sonar-pro)
+- India Lead Finder Agent: 69a0087d5b61f44b7feefc77 (Perplexity sonar-pro)
+
+Features:
+- Two-tab interface: Lead Finder (default) + Company Intel
+- Lead Finder: search Indian companies by Designation + Employee Size
+- Excel download via SpreadsheetML XML (no npm dependency)
+- Industry filter on results
+- Separate localStorage-backed history for each tab
+- Sample data toggle for both modes
+- Dashboard Pro theme with compact spacing

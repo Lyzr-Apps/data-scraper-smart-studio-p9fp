@@ -1,6 +1,6 @@
 {
   "name": "ProspectIQ AI-Powered Company & Contact Intelligence Platform",
-  "description": "Multi-agent platform that coordinates specialized research agents to produce comprehensive company intelligence reports including firmographic data, contacts, technographic analysis, and market intelligence.",
+  "description": "Multi-agent platform with two modes: (1) Company Intelligence - coordinates specialized research agents for comprehensive company reports, (2) Lead Finder - searches Indian companies by designation and employee size for lead generation with Excel export.",
   "nodes": [
     {
       "id": "input_node",
@@ -54,9 +54,30 @@
       "model": "sonar-pro"
     },
     {
+      "id": "lead_input_node",
+      "type": "Input",
+      "label": "Lead Search Query",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "lead_finder_agent",
+      "type": "Agent",
+      "label": "India Lead Finder Agent",
+      "nodeCategory": "agent",
+      "agent_id": "69a0087d5b61f44b7feefc77",
+      "provider": "perplexity",
+      "model": "sonar-pro"
+    },
+    {
       "id": "output_node",
       "type": "Output",
       "label": "Unified Intelligence Report",
+      "nodeCategory": "end"
+    },
+    {
+      "id": "lead_output_node",
+      "type": "Output",
+      "label": "Lead List (Excel)",
       "nodeCategory": "end"
     }
   ],
@@ -69,6 +90,8 @@
     { "source": "company_agent", "target": "output_node" },
     { "source": "contact_agent", "target": "output_node" },
     { "source": "tech_agent", "target": "output_node" },
-    { "source": "market_agent", "target": "output_node" }
+    { "source": "market_agent", "target": "output_node" },
+    { "source": "lead_input_node", "target": "lead_finder_agent" },
+    { "source": "lead_finder_agent", "target": "lead_output_node" }
   ]
 }
